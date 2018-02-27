@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,9 +33,21 @@ namespace u1CareersSebastian
             imgCenter.Source = bi;
             btnUniName.Visibility = Visibility.Hidden;
             btnDefault.Visibility = Visibility.Visible;
-            MessageBox.Show("<info here>");
-        }
+            MessageBoxResult mbr = MessageBox.Show("<info>", "caption", MessageBoxButton.YesNo);
+            {
+                if (mbr == MessageBoxResult.Yes)
+                {
+                    lblMainTitle.Content = "k";
 
+                }
+                else if (mbr == MessageBoxResult.No)
+                {
+                    lblMainTitle.Content = "lul no";
+                }
+            }
+
+        }
+    
         private void btnDefault_Click(object sender, RoutedEventArgs e)
         {
             lblMainTitle.Content = "Sebastian's Careers Project";
