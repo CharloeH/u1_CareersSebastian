@@ -8,34 +8,48 @@
         Title="MainWindow" WindowState="Maximized">
     <ScrollViewer>
         <Grid>
-        <Label x:Name="lblMainTitle" 
+            <Label x:Name="lblMainTitle" 
                Content="Sebastian's Careers Project" 
                HorizontalAlignment="Center" 
                FontSize="34"/>
-        <Label x:Name="lblSecondaryTitle" 
+            <Label x:Name="lblSecondaryTitle" 
                Content="Outlining a university computer science course" 
                FontSize="22" 
                HorizontalAlignment="Center"  
                Margin="144,52,153,242"/>
-        <Button x:Name="btnDefault" 
-            Content="Return"
+            <Button x:Name="btnInfo1" 
+            Content="Info #1"
             HorizontalAlignment="Center"  
-            Click="btnDefault_Click" 
+            Click="btnInfo1_Click" 
             Width="94" 
             Height="62"
-            Margin="337,428,312,114"/>
-        <Button x:Name="btnUniName" 
-                Content="Begin" 
-                Click="btnUniName_Click" 
+            Margin="350,428,312,114"/>
+            <Button x:Name="btnInfo2" 
+                Content="Info #2" 
+                Click="btnInfo2_Click" 
                 FontSize="12" 
                 HorizontalAlignment="Center"  
-                Margin="337,428,312,114" 
+                Margin="550,428,312,114" 
                 Height="62" 
                 Width="94"/>
-        <Image x:Name="imgCenter" 
+            <Button x:Name="btnInfo3"
+                    Click="btnInfo3_Click"
+                    Margin="150,428,312,114"
+                    Height="62"
+                    Width="94"
+                    HorizontalAlignment="Center"
+                    Content="Info #3"
+                    />
+            <Image x:Name="imgCenter" 
                Source="http://hhs.tldsb.on.ca/wp-content/uploads/sites/8/2014/09/HHS-logo.jpeg" Margin="100,10,91,294" Height="300"/>
+            <Label x:Name="lblInfoCenter"
+                   Margin="100,10,91,294"
+                   Height="300"
+                   FontSize="30"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   />
 
-
-    </Grid>
+        </Grid>
     </ScrollViewer>
 </Window>
