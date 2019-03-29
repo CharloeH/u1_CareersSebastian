@@ -31,12 +31,16 @@ namespace u1CareersSebastian
             lblSecondaryTitle.Content = "WSO";
             BitmapImage bi = new BitmapImage(new Uri("http://badmintonclub.uwaterloo.ca/UniversityOfWaterloo_logo_vert_rgb.jpg"));
             imgCenter.Source = bi;
-            MessageBoxResult mbr = MessageBox.Show("To view the number of students attending this universtity and the cost press yes. \n To view information about the campus and residence press no. \n to return to the home page press cancel. \n To view this box agian press info #1.", "caption", MessageBoxButton.YesNoCancel);
+            MessageBoxResult mbr = MessageBox.Show("To view the number of students attending this universtity and the cost press yes.
+            \n To view information about the campus and residence press no. \n to return to the home page press cancel. 
+            \n To view this box agian press info #1.", "caption", MessageBoxButton.YesNoCancel);
             {
                 if (mbr == MessageBoxResult.Yes)
                 {
                     lblMainTitle.Content = "Enrolment";
-                    lblInfoCenter.Content = "In 2015 there were 36,670 students attending this University. \n The cost for one year of computer engineering is 1700$ with an \n additional cost of books being $2000";
+                    lblInfoCenter.Content = "In 2015 there were 36,670 students attending this University. 
+                    \n The cost for one year of computer engineering is 1700$ with an 
+                    \n additional cost of books being $2000";
                     lblSecondaryTitle.Content = "";
                     imgCenter.Visibility = Visibility.Hidden;
                     lblInfoCenter.Visibility = Visibility.Visible;
@@ -45,7 +49,8 @@ namespace u1CareersSebastian
                 {
                     lblMainTitle.Content = "Campus and Residence Information";
                     lblSecondaryTitle.Content = " ";
-                    lblInfoCenter.Content = "The University of Waterloo main campus is spread over 400 hectars of former farmland. \n The main residence for first year students is the village one. it has 1381 residents.";
+                    lblInfoCenter.Content = "The University of Waterloo main campus is spread over 400 hectars of former farmland. 
+                    \n The main residence for first year students is the village one. it has 1381 residents.";
                     imgCenter.Visibility = Visibility.Hidden;
                     lblInfoCenter.Visibility = Visibility.Visible;
                 }
